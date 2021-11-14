@@ -1,0 +1,86 @@
+@media screen and (max-width: 390px) {
+    .header-top{
+        .title-desc{
+            width: auto;
+        }
+    }
+    #block-alpha-account-menu{
+        float: unset !important;
+    }
+    .content{
+        padding: 1rem 2rem !important;
+        .cover-image{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .content_data{
+            width: 100% !important;
+            padding: 0 !important;
+            >ul{
+                li{
+                    p:after{
+                        display: inline !important;
+                    }
+                }
+            }
+        }
+        .publish-date{
+            line-height: unset !important;
+            padding-left: $spacer/2 !important;
+        }
+    }
+    #block-alpha-branding{
+        a:nth-child(2){
+            display: none;
+        }
+    }
+    .pager-footer{
+        display: block !important;
+        text-align: center !important;
+        padding: $spacer !important;
+    }
+}
+@media screen and (min-width: 391px) and (max-width: 629px) {
+    .header-top{
+        .title-desc{
+            width: auto;
+        }
+    }
+    #block-alpha-account-menu{
+        float: right !important;
+    }
+    .content{
+        padding: 1rem 2rem !important;
+        .cover-image{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .content_data{
+            width: 100% !important;
+            padding: 0 !important;
+            >ul{
+                li{
+                    p:after{
+                        display: inline !important;
+                    }
+                }
+            }
+        }
+        .publish-date{
+            line-height: unset !important;
+            padding-left: 0 !important;
+        }
+    }
+    .pager-footer{
+        display: block !important;
+        text-align: center !important;
+        padding: $spacer !important;
+    }
+    .toolbar-fixed.scrolldown #header{
+        top:40px !important;
+    }
+}

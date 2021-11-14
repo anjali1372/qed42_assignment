@@ -1,0 +1,16 @@
+name: alpha
+type: theme
+description: ‘This is D8 theme’
+core: 8.x
+
+libraries:
+  - alpha/global-css
+  - alpha/global-js
+
+regions:
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'

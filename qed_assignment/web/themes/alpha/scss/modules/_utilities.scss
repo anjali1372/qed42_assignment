@@ -1,0 +1,12 @@
+@import 'variables';
+
+@media screen and (max-width: $screen-sm-max) {
+    .hidden-xs {
+        display: none;
+    }
+}
+@media screen and (min-width: $screen-md-min) {
+    .visible-xs {
+        display: none;
+    }
+}

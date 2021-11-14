@@ -1,0 +1,74 @@
+
+.fixed--nav {
+        position: fixed;
+        z-index: 999;
+        border-bottom: $border_width solid $border_color;
+        left: 0;
+        right: 0;
+        top: 0;
+        box-shadow: $box-shadow;
+
+}
+// #toolbar-administration{
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     background: #fff;
+//     z-index: 999;
+// }
+
+.toolbar-fixed.scrolldown{
+    #header{
+         @extend .fixed--nav;
+         top: 79px;
+         #block-alpha-branding{
+            img{
+                height: 4rem;
+                width: 4rem;
+            }
+         }
+    }
+}
+.scrolldown{
+    #header{
+         @extend .fixed--nav;
+         #block-alpha-branding{
+            img{
+                height: 4rem;
+                width: 4rem;
+            }
+         }
+    }
+}
+#header {
+    background: $white; 
+    padding: $spacer/2 12px;
+    height: 80px;
+    box-shadow: $box-shadow;
+
+
+    #block-alpha-branding {
+        float: left;
+    }
+    #block-alpha-account-menu{
+        float: right;
+        > ul{
+            display: flex;
+            li{
+                padding: 0 8px;
+                list-style-type: none;
+            }
+        }
+    }
+}
+
+.header-top{
+    padding: 32px 16px;
+    text-align: center;
+    border-bottom: $border-bottom;
+
+    .title-desc{
+        width: 50%;
+        margin: auto;
+    }
+}

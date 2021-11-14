@@ -1,0 +1,41 @@
+// Media Queries
+$screen-sm-min: '576px';
+$screen-md-min: '768px';
+$screen-lg-min: '992px';
+$screen-xl-min: '1200px';
+$screen-sm-max: '767px';
+$screen-md-max: '991px';
+$screen-lg-max: '1199px';
+$screen-xs-max: '575px';
+
+// Roboto Fonts
+$roboto_regular: 'Roboto Regular',sans-serif;
+$roboto_thin: 'Roboto Thin',sans-serif;
+$roboto_light: 'Roboto Light',sans-serif;
+$roboto_medium: 'Roboto Medium',sans-serif;
+$roboto_bold: 'Roboto Bold',sans-serif;
+$roboto_black: 'Roboto Black',sans-serif;
+$roboto_italic: 'Roboto Italic',sans-serif;
+$roboto_thin_italic: 'Roboto Thin italic',sans-serif;
+$roboto_light_italic: 'Roboto Light Italic',sans-serif;
+$roboto_medium_italic: 'Roboto Medium Italic',sans-serif;
+$roboto_bold_talic: 'Roboto Bold Italic',sans-serif;
+$roboto_black_talic: 'Roboto Black Italic',sans-serif;
+
+// Lato Fonts
+$lato_regular: 'Lato Regular', sans-serif;
+$lato_italic: 'Lato Italic', sans-serif;
+$lato_bold_italic: 'Lato Bold Italic', sans-serif;
+$lato_light: 'Lato Light', sans-serif;
+$lato_bold: 'Lato Bold', sans-serif;
+
+// Cormorant Garamond for Headings
+$cormorant_garamond: 'Cormorant Garamond', sans-serif;
+
+// transportation label widths
+$transport_label_width: 142px;
+
+$spacer: 16px;
+$border_width:2px;
+$border_color:#ececec;
+$border-bottom: $border-width solid $border-color;

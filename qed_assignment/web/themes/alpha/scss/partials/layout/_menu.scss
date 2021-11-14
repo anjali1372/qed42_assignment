@@ -1,0 +1,484 @@
+.header {
+    nav {
+        a {
+            text-transform: uppercase;
+            color: #514f44;
+            // color: #292929;
+        }
+    }
+}
+.navbar-toggler-icon {
+    width: 30px;
+    height: 4px;
+    margin: 0.4em 0;
+    transition: 0.3s ease-in-out;
+    // background: #fff;
+    background: #5F4804;
+    display: block;
+}
+.region-navigation {
+    margin: 0;
+    position: relative;
+}
+.block-user-login-block {
+    display: none;
+    width: 100%;
+    z-index: 999;
+}
+.user-login-form {
+    border-width: 2px;
+    padding: 1rem;
+    border-radius: 0;
+    margin-top: 14px;
+    position: relative;
+    background-color: #fff;
+    border: 4px solid rgba(0, 0, 0, 0.08);
+    margin-bottom: 0 !important;
+    .login-title {
+        background: #fff;
+        border: 0;
+        box-shadow: none;
+        text-transform: uppercase;
+        font-size: 2.25rem;
+        color: #cccac6;
+        letter-spacing: 1px;
+        font-weight: normal;
+        margin-bottom: .5rem;
+        font-family: $roboto_light, sans-serif !important;
+    }
+    + .item-list {
+        display: none;
+    }
+    fieldset {
+        width: 100%;
+        padding: 0;
+    }
+    .form-control {
+        width: 100%;
+        max-width: 100%;
+        background-color: #dfddd9 !important;
+        border-radius: 0;
+    }
+    a {
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+    .forgot-password {
+        display: block;
+        text-align: center;
+    }
+    > a,.forgot-password a {
+        font-size: 14px;
+    }
+    #capslockdiv {
+        height: auto;
+        margin: 0;
+        p {
+            top: 0px;
+        }
+    }
+    #edit-name,#edit-pass {
+        text-indent: 0;
+        background-image: none;
+    }
+    .form-actions {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        button {
+            margin-left: 0;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            margin-top: 0px;
+            width: 160px;
+            height: auto;
+            line-height: normal;
+            padding: .5rem .75rem;
+            font-family: $roboto_medium, sans-serif;
+        }
+    }
+    label {
+        display: none !important;
+    }
+    .social-auth.auth-icon {
+        width: 100%;
+        margin: .25rem 0;
+        &:hover {
+            filter: none;
+            animation-name: none;
+        }
+    }
+    .socialAuth {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        a {
+            position: relative;
+            color: $white;
+            text-transform: initial;
+            &::after {
+                content: "Sign In with Facebook";
+                position: absolute;
+                left: 50px;
+                top: 13px;
+            }
+            &:last-child {
+                &::after {
+                    content: "Sign In with Google";
+                }
+            }
+        }
+    }
+}
+
+.user-login-form {
+    padding: 1rem;
+    border-radius: 0;
+    margin-top: 10px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 12px solid #ffffff;
+        border-left: 12px solid transparent;
+        top: -24px;
+        left: 20px;
+    }
+    .social-auth.auth-icon {
+        width: 210px;
+    }
+}
+form.user-pass {
+    p {
+        text-align: left !important;
+        padding-left: 15px;
+        float: none;
+    }
+    button {
+        text-transform: uppercase;
+    }
+}
+#main {
+    > .modal {
+        top: 100px;
+        .modal-content {
+            border-radius: 0;
+        }
+    }
+}
+.modal-dialog  {
+    .user-login-form {
+        border: 0 !important;
+        background: $white;
+        background-image: none !important;
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        > a {
+            font-family: $roboto_bold !important;
+            text-transform: uppercase;
+        }
+        .forgot-password {
+            a {
+                color: #514f44;
+                text-transform: uppercase;
+            }
+        }
+        .form-actions {
+            margin-bottom: 0 !important;
+        }
+        input {
+            height: 38px;
+        }
+        &::before {
+            position: relative;
+            border: 0;
+        }
+        .login-title {
+            display: none;
+        }
+        .form-actions {
+            margin-left: 0 !important;
+        }
+    }
+    p.sell-login-title {
+        background: #fff;
+        border: 0;
+        box-shadow: none;
+        font-size: 1.25rem;
+        line-height: normal;
+        color: #cccac6;
+        letter-spacing: 1px;
+        font-weight: normal;
+        margin-bottom: .5rem;
+        font-family: $roboto_light !important;
+    }
+}
+#header {
+    a[href='/cart'] {
+        font-size: 0;
+        padding-left: 0;
+        display: none;
+        height: 40px;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 24px;
+            width: 24px;
+            background: url(/themes/custom/horse_auction/images/cart-24.png);
+            font-size: 1rem;
+        }
+    }
+    .navbar-brand {
+        img {
+            background: $white;
+        }
+    }
+}
+.user-logged-in {
+    #header {
+        a[href='/cart'] {
+            display: block;
+        }
+    }
+    .mobile_only {
+        display: none;
+    }
+}
+.mobile_only {
+    .block-user-login-block {
+        display: none !important;
+    }
+}
+@media screen and (min-width: $screen-lg-min) {
+    .header {
+        .navbar {
+            padding: 0 1rem;
+        }
+        .navbar-expand-lg {
+            .navbar-collapse {
+                justify-content: flex-end;
+            }
+        }
+    }
+    // .region-navigation {
+    //     padding-right: 2em;
+    // }
+    .block-user-login-block, .user-login-form {
+        max-width: 300px !important;
+        margin: 0 auto;
+    }
+    .user-login-form {
+        border-width: 2px;
+        &::before {
+            left: auto;
+            right: 60px;
+        }
+        .socialAuth {
+            a::after {
+                left: 72px;
+            }
+        }
+    }
+    .path-frontpage {
+        .user-login-form {
+            border: 0;
+            margin-top: 14px;
+        }
+    }
+    .navbar-expand-lg {
+        .navbar-nav {
+            .nav-link {
+                padding-left: 0;
+                padding-right: 1rem;
+            }
+        }
+    }
+    .menu--account {
+        > ul {
+            > li {
+                &.nav-link {
+                    padding: 0;
+                    a {
+                        padding-left: 0;
+                        &::after {
+                            border: 0;
+                            margin: 0;
+                        }
+                    }
+                    &:last-child {
+                        > a {
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .dropdown-menu {
+            box-shadow: 1px 1px 4px 5px #f8f8f8;
+            left: -40px;
+            &::before {
+                content: "";
+                position: absolute;
+                top: -24px;
+                left: 70px;
+                width: 0;
+                height: 0;
+                border-top: 12px solid transparent;
+                border-right: 12px solid transparent;
+                border-bottom: 12px solid $white;
+                border-left: 12px solid transparent;
+            }
+        }
+        .dropdown-item {
+            width: 180px;
+            &:focus, &:hover {
+                background: $white;
+            }
+            a {
+                word-break: break-word;
+                white-space: normal;
+                &:hover {
+                    text-decoration: none;
+                    color: #006400;
+                }
+            }
+            &.active {
+                background: none;
+                a {
+                    color: #008000;
+                }
+            }
+        }
+    }
+    .block-user-login-block {
+        position: absolute;
+        right: 0;
+        top: 38px;
+        z-index: 999;
+    }
+    // .path-frontpage {
+    //     a[href='/cart'] {
+    //         &::after {
+    //             background: url(/themes/custom/horse_auction/images/cart-24-gray.png);
+    //         }
+    //     }
+    // }
+    #header {
+        a[href='/cart'] {
+            padding-right: 26px;
+            &::after {
+                top: 5px;
+            }
+        }
+    }
+    .modal-dialog  {
+        p.sell-login-title {
+            font-size: 2rem;
+        }
+        .user-login-form {
+            .socialAuth {
+                a {
+                    &::after {
+                        left: 28%;
+                    }
+                }
+            }
+        }
+    }
+    .mobile_only {
+        display: none;
+    }
+}
+@media screen and (max-width: $screen-md-max) {
+    .user-login-form {
+        margin-bottom: 1rem;
+        .socialAuth {
+            a {
+                &::after {
+                    top: 15px;
+                    right: 15px;
+                    line-height: normal;
+                }
+                &:last-child {
+                    &::after {
+                        right: 34px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .mobile_only {
+        position: absolute;
+        right: 50px;
+        text-align: right;
+        top: 23px;
+        .navbar-nav {
+            .nav-item {
+                &:last-child {
+                    display: none;
+                }
+            }
+            .nav-link {
+                padding: 0;
+                color: #5f4906;
+            }
+        }
+        .menu--account {
+            display: none;
+        }
+    }
+    #main > .modal .modal-dialog {
+        max-width: 350px;
+        margin: .5rem auto;
+    }
+}
+@media screen and (max-width: $screen-sm-max) {
+    .mobile_only {
+        top: 10px;
+        // .navbar-nav {
+        //     .nav-link {
+        //         font-size: 14px;
+        //     }
+        // }
+    }
+}
+@media screen and (max-width: 390px) {
+    .mobile_only {
+        top: 13px;
+    }
+    .navbar-toggler-icon {
+        margin-top: 0;
+    }
+    .user-logged-in,.nav-active {
+        .navbar-toggler-icon {
+            margin-top: 0.4em;
+        }
+    }
+}
+@media screen and (max-width: 350px) {
+    .modal-dialog  {
+        .user-login-form {
+            .socialAuth {
+                a {
+                    &::after {
+                        left: 35px;
+                        right: 0px;
+                    }
+                    &:last-child {
+                        &::after {
+                            left: 35px;
+                            right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

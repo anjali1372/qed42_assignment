@@ -1,0 +1,46 @@
+.pager-footer{
+    display: flex;
+    justify-content: space-between;
+        padding: 16px 5rem;
+    .pager{
+        ul{
+            display: flex;
+            li{
+                padding: 0 10px;
+                list-style-type: none;
+                a{
+                    @include link;
+                    text-decoration: none;
+                }
+            }
+            .pager__item--first,.pager__item--last{
+                display: none;
+            }
+            .pager__item--previous,.pager__item--next{
+                @include link_outline;
+            }
+        }
+    }
+    .exposed{
+        line-height: 4;
+        color: $link-color;
+        .views-exposed-form{
+            .form-item-items-per-page,.form-actions{
+                display: inline-block;
+            }
+            .form-item-items-per-page{
+                .form-select{
+                    @include form_select_drpdwn;
+                    margin-left: 12px;
+                }               
+            }
+            .form-actions{
+                .form-submit{
+                    @include form_select_drpdwn;
+                    border:1px solid;
+                    padding: 7px 12px;
+                }
+            }
+        }
+    }
+}

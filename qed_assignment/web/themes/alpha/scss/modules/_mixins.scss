@@ -1,0 +1,49 @@
+
+@mixin clearfix {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+
+@mixin required_icon {
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    background-image: url('/themes/alpha/image/send-white.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+    margin: 0 0.3em;
+    filter: contrast(0.2);
+}
+@mixin row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 16px 5rem;
+}
+@mixin vert_dash {
+    content: "|";
+    display: inline-block;
+    padding-left: 12px;
+    color: $black;
+}
+@mixin link{
+    color: $link-color;
+    text-decoration: underline;
+}
+@mixin link_outline{
+    outline: auto;
+    padding: 6px 8px;
+    outline-color: $link-color;
+}
+@mixin form_select_drpdwn{
+    padding: 6px;
+    background: transparent;
+    border-color: $link-color;
+    border-radius: 4px;
+    color: $link-color;
+}
